@@ -101,13 +101,13 @@ def get_cfg():
     parser.add_argument(
         "--eval_every_drop",
         type=int,
-        default=5,
+        default=1,
         help="how often to evaluate after learning rate drop",
     )
     parser.add_argument(
-        "--eval_every", type=int, default=20, help="how often to evaluate"
+        "--eval_every", type=int, default=1, help="how often to evaluate"
     )
-    parser.add_argument("--emb", type=int, default=64, help="embedding size")
+    parser.add_argument("--emb", type=int, default=128, help="embedding size")
     parser.add_argument(
         "--bs", type=int, default=512, help="number of original images in batch N",
     )
